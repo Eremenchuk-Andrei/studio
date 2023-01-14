@@ -32,7 +32,6 @@
     <script defer src="./js/ScrollTrigger.min.js"></script>
     <script defer src="./js/graph-modal.min.js"></script>
     <script
-      defer
       src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=en_US"
       type="text/javascript"
     ></script>
@@ -42,14 +41,21 @@
   </head>
   <body>
     <header class="header">
-      <video
-        id="videoPlayer"
-        class="back-video"
-        src="./video/main-video.mp4"
-        loop
-        muted
-        autoplay
-      ></video>
+      <div class="video-background">
+        <div class="video-foreground">
+          <video 
+          poster="./img/poster.png"
+          preload="auto"
+          id="videoPlayer"
+          class="back-video"
+          loop="loop"
+          muted="muted"
+          autoplay="autoplay"
+          playsinline>
+            <source src="./video/main-video.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
       <!-- <img class="back-img" src="./img/back2.jpg" alt="back"> -->
       <div class="container container-header">
         <a href="">
@@ -293,23 +299,25 @@
       <section>
         <div class="container container-hero">
           <div class="text-wrap">
-            <h1 class="hero-header bg-text__first">
-              Zeev
-              <h2 class="double">Zeev</h2>
-            </h1>
-            <h1 class="head-mobile">
-              <div class="el1 prop-el">Z</div>
-              <div class="el2 prop-el">E</div>
-              <div class="el3 prop-el">E</div>
-              <div class="el4 prop-el">V</div>
-            </h1>
-            <h2 class="hero-header bg-text__hero">Studio</h2>
-            <div class="wrap-down__section">
+            <div>
+              <h1 class="hero-header bg-text__first">
+                Zeev
+              </h1>
+              <h2 class="head-mobile">
+                <div class="el1 prop-el">Z</div>
+                <div class="el2 prop-el">E</div>
+                <div class="el3 prop-el">E</div>
+                <div class="el4 prop-el">V</div>
+              </h2>
+              <h2 class="hero-header bg-text__hero">Studio</h2>
+            </div>
+         <div class="wrap-down__section"> 
               <h2 class="hero-header-two hero-1">Inspiration</h2>
               <h2 class="hero-header-two hero-2">Creative</h2>
-            </div>
+            </div>  
           </div>
         </div>
+        
       </section>
       <section class="section-video__vynil">
         <div class="container container-main">
@@ -453,11 +461,13 @@
               </svg>
             </button>
             <video
+              poster="./img/port2.png"
               class="back-video__vynil"
               src="./video/vinyl.mp4"
               loop
               muted
               autoplay
+              playsinline
             ></video>
           </div>
           <div class="part-two">
@@ -944,6 +954,7 @@
                 </div>
               </li>
             </ul>
+            <div class="swiper-pagination"></div>
           </div>
         </div>
       </section>

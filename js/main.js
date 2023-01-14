@@ -18,6 +18,7 @@ function init() {
 			iconImageSize: [20, 20],
 		}
 	);
+	
 	map.geoObjects.add(myPlacemark);
 	map.controls.remove('geolocationControl'); // удаляем геолокацию
 	map.controls.remove('searchControl'); // удаляем поиск
@@ -93,8 +94,9 @@ gsap.to('.list-team', {
 	gridGap: '30px',
 	delay: 1,
 	duration: .5,
-	
+
 })
+
 
 gsap.to('.settings-text', {
 	scrollTrigger: {
@@ -186,22 +188,23 @@ gsap.to('.map', {
 	delay: .3
 })
 
-let mm = gsap.matchMedia();
-mm.add("(min-width: 1224px)", () => {
-	gsap.timeline({ repeatDelay: 1 })
-		.to('.bg-text__first', { backgroundPosition: '3px -224px, 100% center', duration: 1 })
-		.to('.double', { backgroundPosition: '3px -224px, 100% center', duration: .3, delay: .1 })
-		.to('.bg-text__first', { transform: 'translateX(-75.5px) translateY(-20px) scale(1.6)', duration: .5, })
-		.to('.double', { transform: 'translateX(-117px) translateY(-10px) scale(1.6)', duration: .5 })
-		.to('.text-wrap', { left: 'calc(0% + 265px)', duration: .5, delay: .1 })
-	gsap.timeline({ repeatDelay: 1 })
-		.to('.wrap-down__section', { textAlign: 'left', transform: 'translateX(-146px) translateY(90px)', delay: 2.5, duration: 1 })
-	gsap.timeline({ repeatDelay: 1 })
-		.to('.hero-2', { transform: 'translateX(-184px) translateY(30px)', delay: 2.5, duration: 1 })
-	gsap.timeline({ repeatDelay: 1 })
-		.to('.bg-text__hero', { transform: 'translateX(-410px) translateY(95px)', delay: 2.5, duration: 1, })
-		.to('.double', { display: 'block', transform: 'translateX(-75.5px) translateY(-19.9px) scale(1.6)', duration: .5, })
-})
+//  let mm = gsap.matchMedia();
+//  mm.add("(min-width: 1224px)", () => {
+//  	gsap.timeline({ repeatDelay: 1 })
+// 		.to('.bg-text__first', { backgroundPosition: '3px -224px, 100% center', duration: 1 })
+// 		.to('.double', { backgroundPosition: '3px -224px, 100% center', duration: .3, delay: .1 })
+// 		.to('.bg-text__first', { transform: 'translateX(-65.5px) translateY(-20px) scale(1.6)', duration: 1.})
+// 		.to('.double', { transform: 'translateX(-117px) translateY(-10px) scale(1.6)', duration: .5 })
+		// .to('.text-wrap', { left: 'calc(0% + 257px)', duration: .5, delay: 1.1 })
+// 	gsap.timeline({ repeatDelay: 1 })
+// 		.to('.wrap-down__section', { textAlign: 'left', display: 'inline-grid', transform: 'translateX(-373px) translateY(90px)', delay: 2.5, duration: 1 })
+// 	//  	.to('.hero-1', { transform: 'translateX(-303px) translateY(90px)', delay: 2.5, duration: 1 })
+// 	//  gsap.timeline({ repeatDelay: 1 })
+// 	// 	.to('.hero-2', { transform: 'translateX(-500px) translateY(117px)', delay: 2.5, duration: 1 })
+// 	gsap.timeline({ repeatDelay: 1 })
+// 		.to('.bg-text__hero', { transform: 'translateX(-404px) translateY(95px)', delay: 2.5, duration: 1, })
+// 		.to('.double', { display: 'block', transform: 'translateX(-65.5px) translateY(-21.9px) scale(1.6)', duration: .5, })
+//  })
 
 if (document.documentElement.clientWidth <= 736) {
 
@@ -210,8 +213,9 @@ if (document.documentElement.clientWidth <= 736) {
 			trigger: '.list-team',
 			toggleActions: 'play'
 		},
+		transform: 'translateY(-500px)',
 		opacity: 1,
-		duration: 5,
+		duration: 1,
 		delay: .1
 	})
 
@@ -225,7 +229,7 @@ if (document.documentElement.clientWidth <= 736) {
 		duration: 4,
 		delay: .1
 	})
-	
+
 	gsap.to('.swiper-button-prev', {
 		scrollTrigger: {
 			trigger: '.team',
@@ -236,8 +240,8 @@ if (document.documentElement.clientWidth <= 736) {
 		duration: 4,
 		delay: .1
 	})
-	
-	mm.kill(gsap);
+
+	//mm.kill(gsap);
 }
 
 let devSwiper = document.querySelector('.swiper')
@@ -245,13 +249,16 @@ let adaptiveSlider;
 
 function mSlider() {
 	if (window.innerWidth <= 736 && devSwiper.dataset.mobile === "false") {
-		 adaptiveSlider = new Swiper(devSwiper, {
+		adaptiveSlider = new Swiper(devSwiper, {
 			grabCursor: true,
 			loop: true,
 			effect: "creative",
 			navigation: {
 				nextEl: ".swiper-button-next",
 				prevEl: ".swiper-button-prev",
+			},
+			pagination: {
+				el: ".swiper-pagination",
 			},
 			creativeEffect: {
 				prev: {
@@ -265,11 +272,11 @@ function mSlider() {
 					translate: ["5%", 0, -200],
 					rotate: [0, -100, 0],
 				}
-		
+
 			}
 		})
 
-		 devSwiper.dataset.mobile = "true";
+		devSwiper.dataset.mobile = "true";
 	}
 
 	if (window.innerWidth > 736 && devSwiper.dataset.mobile == "true") {
@@ -289,9 +296,9 @@ window.addEventListener("resize", () => {
 
 
 window.addEventListener("resize", () => {
-	
+
 	if (document.documentElement.clientWidth <= 1224) {
-		mm.kill(gsap);
+	//	mm.kill(gsap);
 	}
 	if (document.documentElement.clientWidth >= 736) {
 		let k = document.querySelector('.list-team');
@@ -312,7 +319,7 @@ window.addEventListener("resize", () => {
 			duration: 4,
 			delay: .1
 		})
-		
+
 		gsap.to('.swiper-button-prev', {
 			scrollTrigger: {
 				trigger: '.team',
@@ -323,42 +330,41 @@ window.addEventListener("resize", () => {
 			duration: 4,
 			delay: .1
 		})
-		
-		mm.kill(gsap);
+
+		//mm.kill(gsap);
 	} else {
 		let btnPrev = document.querySelector('.swiper-button-prev');
 		let btnNext = document.querySelector('.swiper-button-next');
 		btnPrev.style.visibility = 'hidden';
-		btnNext.style.visibility = 'hidden';	
-		mm.add(gsap);
+		btnNext.style.visibility = 'hidden';
+		//mm.add(gsap);
 	}
 });
 
+// mm.add("(max-width: 1223px)", () => {
+// 	gsap.timeline({ repeatDelay: 1 })
+// 		.to('.bg-text__first', { backgroundPosition: '3px -224px, 100% center', duration: 1.6, delay: .1 })
+// 		.to('.double', { backgroundPosition: '3px -224px, 100% center', duration: .3, delay: .1 })
+// 		.to('.bg-text__first', { transform: 'translateX(-10.5px) translateY(-1px) scale(1.1)', duration: .3, delay: .1 })
+// 		.to('.double', { transform: 'translateX(-117px) translateY(-10px) scale(1.1)', duration: .3 })
+// 		.to('.text-wrap', { left: 'calc(0% + 95px)', duration: 1, delay: .1 })
+// 	gsap.timeline({ repeatDelay: 1 })
+// 		.to('.wrap-down__section', { display: 'inline-grid', transform: 'translateX(-195px) translateY(60px)', delay: 3, duration: 1 })
+// 	//gsap.timeline({ repeatDelay: 1 })
+// 	//	.to('.hero-2', { transform: 'translateX(-184px) translateY(30px)', delay: 3, duration: 1 })
+// 	gsap.timeline({ repeatDelay: 1 })
+// 		.to('.bg-text__hero', { fontSize: '68px', transform: 'translateX(-285px) translateY(72px)', delay: 3, duration: 1, })
+// 		.to('.double', { display: 'block', transform: 'translateX(-10.5px) translateY(-2.9px) scale(1.1)', duration: .3, })
 
 
-mm.add("(max-width: 1223px)", () => {
-	gsap.timeline({ repeatDelay: 1 })
-		.to('.bg-text__first', { backgroundPosition: '3px -224px, 100% center', duration: 1.6, delay: .1 })
-		.to('.double', { backgroundPosition: '3px -224px, 100% center', duration: .3, delay: .1 })
-		.to('.bg-text__first', { transform: 'translateX(-13.5px) translateY(-1px) scale(1.1)', duration: .3, delay: .1 })
-		.to('.double', { transform: 'translateX(-117px) translateY(-10px) scale(1.1)', duration: .3 })
-		.to('.text-wrap', { left: 'calc(0% + 95px)', duration: 1, delay: .1 })
-	gsap.timeline({ repeatDelay: 1 })
-		.to('.wrap-down__section', { textAlign: 'left', transform: 'translateX(-21px) translateY(55px)', delay: 3, duration: 1 })
-	gsap.timeline({ repeatDelay: 1 })
-		.to('.hero-2', { transform: 'translateX(-184px) translateY(30px)', delay: 3, duration: 1 })
-	gsap.timeline({ repeatDelay: 1 })
-		.to('.bg-text__hero', { fontSize: '68px', transform: 'translateX(-285px) translateY(72px)', delay: 3, duration: 1, })
-		.to('.double', { display: 'block', transform: 'translateX(-13.5px) translateY(-.9px) scale(1.1)', duration: .3, })
+// });
 
-});
-
-if (document.documentElement.clientWidth <= 736) {
-	mm.kill(gsap);
-}
-else {
-	mm.add(gsap);
-}
+// if (document.documentElement.clientWidth <= 736) {
+// 	mm.kill(gsap);
+// }
+// else {
+// 	mm.add(gsap);
+// }
 
 
 const video = document.querySelector('.back-video');
