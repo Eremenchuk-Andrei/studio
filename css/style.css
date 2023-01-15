@@ -1074,6 +1074,7 @@ button {
 	animation-delay: 2.9s;
 }
 
+
 @keyframes blink {
 	
 	50% {
@@ -2071,8 +2072,12 @@ button {
 		margin-bottom: 12px;
 	}
 
+	.hero-1 {
+		margin-right: 0;
+	}
+
 	.bg-text__hero {
-		font-size: 55px;
+		font-size: 57px;
 	}
 
 	.logo-svg {
