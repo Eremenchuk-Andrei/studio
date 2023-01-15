@@ -1070,22 +1070,17 @@ button {
 	opacity: 0;
 	-webkit-transform: translateX(-75.5px) translateY(-20px) scale(1.6);
 	transform: translateX(-75px) translateY(-12px) scale(1.6);
-	animation: blink 3s linear infinite;
+	animation: blink 5s linear infinite;
 	animation-delay: 2.9s;
 }
 
 @keyframes blink {
-	0% {
-		opacity: 1;
-	}
-
+	
 	50% {
-		opacity: 0;
-	}
-
-	100% {
+		color: var(--white);
 		opacity: 1;
 	}
+
 }
 
 
