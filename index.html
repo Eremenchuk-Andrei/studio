@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/svg+xml" href="./img/favicon/favicon.svg">
-    <link rel="icon" type="image/png" href="./img/favicon/favicon.png">
+    <link rel="icon" type="image/svg+xml" href="./img/favicon/favicon.svg" />
+    <link rel="icon" type="image/png" href="./img/favicon/favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,27 +14,15 @@
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bungee&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/graph-modal.min.css" />
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/style.css" />
-    <script
-      defer
-      src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"
-    ></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script defer src="./js/ScrollTrigger.min.js"></script>
     <script defer src="./js/graph-modal.min.js"></script>
-    <script
-      src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=en_US"
-      type="text/javascript"
-    ></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=en_US" type="text/javascript"></script>
     <script defer src="./js/gsap.min.js"></script>
     <script defer src="./js/main.js"></script>
     <title>ZEEV Studio</title>
@@ -43,17 +31,17 @@
     <header class="header">
       <div class="video-background">
         <div class="video-foreground">
-          <video 
-          poster="./img/port1.png"
-          preload="auto"
-          id="videoPlayer"
-          class="back-video"
-          loop="loop"
-          muted="muted"
-          autoplay="autoplay"
-          playsinline
+          <video
+            poster="./img/port1.png"
+            preload="auto"
+            id="videoPlayer"
+            class="back-video"
+            loop="loop"
+            muted="muted"
+            autoplay="autoplay"
+            playsinline
           >
-            <source src="./video/main-video.mp4" type="video/mp4">
+            <source src="./video/main-video.mp4" type="video/mp4" />
           </video>
         </div>
       </div>
@@ -77,27 +65,15 @@
               <a class="nav-link" href="">Buy Now</a>
             </li>
             <li class="item-nav header-nav">
-              <button
-                data-graph-target="first"
-                class="btn-order btn-reset modal-btn"
-                data-graph-animation="fade"
-              >
+              <button data-graph-target="first" class="btn-order btn-reset modal-btn" data-graph-animation="fade">
                 Make Order
               </button>
             </li>
           </ul>
         </nav>
         <div class="graph-modal">
-          <div
-            class="graph-modal__container"
-            role="dialog"
-            aria-modal="true"
-            data-graph-target="first"
-          >
-            <button
-              class="btn-reset graph-modal__close js-modal-close"
-              aria-label="Закрыть модальное окно"
-            ></button>
+          <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="first">
+            <button class="btn-reset graph-modal__close js-modal-close" aria-label="Закрыть модальное окно"></button>
             <div class="graph-modal__content">
               <h2 class="modal-header">Make order</h2>
 
@@ -120,9 +96,7 @@
                       name="name"
                       id="name"
                     />
-                    <div id="name-error" class="invalid-feedback">
-                      Name must be between 2 and 30 characters
-                    </div>
+                    <div id="name-error" class="invalid-feedback">Name must be between 2 and 30 characters</div>
                   </div>
                   <div class="section-contacts__form-group">
                     <input
@@ -135,9 +109,7 @@
                       name="tel"
                       id="phone"
                     />
-                    <div id="error-phone" class="invalid-feedback">
-                      Enter a valid phone
-                    </div>
+                    <div id="error-phone" class="invalid-feedback">Enter a valid phone</div>
                   </div>
                   <div class="section-contacts__form-group">
                     <input
@@ -150,20 +122,11 @@
                       name="tel"
                       id="email"
                     />
-                    <div id="error-mail" class="invalid-feedback">
-                      Enter a valid email
-                    </div>
+                    <div id="error-mail" class="invalid-feedback">Enter a valid email</div>
                   </div>
-                  <button
-                    type="submit"
-                    value="Submit"
-                    class="btn btn-primary btn-dark btn-block"
-                  >
-                    Send
-                  </button>
+                  <button type="submit" value="Submit" class="btn btn-primary btn-dark btn-block">Send</button>
                   <p class="modal-paragraph">
-                    By clicking on the button, you agree to the terms of the
-                    privacy policy and personal data processing
+                    By clicking on the button, you agree to the terms of the privacy policy and personal data processing
                   </p>
                 </div>
               </form>
@@ -171,25 +134,12 @@
           </div>
         </div>
         <button class="play" type="button">
-          <svg
-            id="video"
-            width="60"
-            height="77"
-            viebox="0 0 60 77"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
+          <svg id="video" width="60" height="77" viebox="0 0 60 77" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g opacity="0.9">
               <circle cx="36.2899" cy="37.9357" r="23.2098" stroke="white" />
               <g clip-path="url(#clip0_351_220)">
-                <path
-                  d="M34.9912 32.2905H32.2815V45.839H34.9912V32.2905Z"
-                  fill="white"
-                />
-                <path
-                  d="M40.2993 32.2905H37.5896V45.839H40.2993V32.2905Z"
-                  fill="white"
-                />
+                <path d="M34.9912 32.2905H32.2815V45.839H34.9912V32.2905Z" fill="white" />
+                <path d="M40.2993 32.2905H37.5896V45.839H40.2993V32.2905Z" fill="white" />
               </g>
               <path
                 d="M56.2299 70.9292L55.2318 71.4171L54.6369 70.1999C54.628 70.7371 54.4843 71.2144 54.2059 71.6321C53.9233 72.0617 53.5223 72.4035 53.003 72.6574C52.1915 73.054 51.4114 73.1035 50.6627 72.806C49.918 72.5165 49.2898 71.8484 48.7781 70.8015L48.6592 70.5581C48.3894 70.0063 48.2183 69.4917 48.1459 69.0144C48.0774 68.5452 48.0934 68.1152 48.1939 67.7242C48.2983 67.3414 48.4832 66.9997 48.7484 66.6991C49.0056 66.4025 49.333 66.157 49.7306 65.9627C50.2824 65.693 50.8044 65.5886 51.2967 65.6496C51.7809 65.7145 52.2055 65.884 52.5707 66.1579L50.8155 62.5671L51.8866 62.0435L56.2299 70.9292ZM50.4381 66.7931C50.1785 66.92 49.9588 67.0877 49.7792 67.2962C49.6035 67.5127 49.4822 67.758 49.4151 68.0321C49.3399 68.3102 49.329 68.6171 49.3825 68.9528C49.428 69.2926 49.5439 69.6531 49.7303 70.0345L49.8493 70.278C50.0199 70.6269 50.2213 70.9155 50.4535 71.1438C50.6776 71.3761 50.9205 71.5439 51.1821 71.6472C51.4396 71.7627 51.7058 71.8135 51.9806 71.7999C52.2554 71.7862 52.5226 71.7159 52.7823 71.5889C53.0745 71.4462 53.3184 71.2666 53.5143 71.0502C53.7141 70.8419 53.8576 70.611 53.9447 70.3572C54.0358 70.1117 54.0745 69.8515 54.0608 69.5766C54.0471 69.3018 53.9768 69.0346 53.8498 68.7749L53.3739 67.8011C53.2311 67.509 53.0515 67.265 52.8351 67.0692C52.6187 66.8733 52.3837 66.7319 52.13 66.6447C51.8763 66.5576 51.6039 66.5249 51.3129 66.5465C51.0218 66.5681 50.7303 66.6503 50.4381 66.7931Z"
@@ -234,12 +184,7 @@
             </g>
             <defs>
               <clippath id="clip0_351_220">
-                <rect
-                  width="13.5485"
-                  height="13.5485"
-                  fill="white"
-                  transform="translate(29.5161 32.2905)"
-                />
+                <rect width="13.5485" height="13.5485" fill="white" transform="translate(29.5161 32.2905)" />
               </clippath>
             </defs>
           </svg>
@@ -252,10 +197,7 @@
             xmlns="http://www.w3.org/2000/svg"
           >
             <circle cx="52.6076" cy="51.3725" r="31.4914" stroke="white" />
-            <path
-              d="M59.7456 51.764L46.2527 59.8597V43.6682L59.7456 51.764Z"
-              fill="white"
-            />
+            <path d="M59.7456 51.764L46.2527 59.8597V43.6682L59.7456 51.764Z" fill="white" />
             <path
               d="M0 49.1804L0.209571 47.8693L1.80842 48.1249C1.2895 47.7468 0.921703 47.2781 0.705034 46.7188C0.479411 46.1471 0.421122 45.5201 0.530167 44.8379C0.700551 43.772 1.1886 42.9755 1.99433 42.4485C2.78939 41.9197 3.87443 41.7652 5.24944 41.985L5.56921 42.0361C6.29403 42.1519 6.91461 42.3386 7.43095 42.596C7.93664 42.8518 8.34598 43.1632 8.65898 43.5302C8.96132 43.8955 9.16816 44.3112 9.2795 44.7772C9.39255 45.2325 9.40733 45.7213 9.32385 46.2436C9.20798 46.9684 8.95098 47.5504 8.55283 47.9896C8.15639 48.4182 7.69875 48.7167 7.17991 48.8852L11.8965 49.6391L11.6716 51.0461L0 49.1804ZM8.02563 46.364C8.08015 46.0229 8.06731 45.6929 7.98711 45.374C7.89625 45.0534 7.73995 44.7661 7.51821 44.512C7.29818 44.2473 7.00567 44.0256 6.64069 43.8471C6.27741 43.6578 5.84528 43.5231 5.34431 43.4431L5.02454 43.392C4.5662 43.3187 4.14561 43.317 3.76275 43.387C3.38161 43.4463 3.05056 43.5683 2.76962 43.753C2.47973 43.9253 2.24698 44.1504 2.07136 44.4284C1.89575 44.7064 1.78068 45.016 1.72616 45.3571C1.66482 45.7408 1.67255 46.1028 1.74934 46.443C1.81547 46.7815 1.94257 47.0805 2.13063 47.3402C2.30803 47.5981 2.53573 47.8148 2.81374 47.9905C3.09174 48.1661 3.40129 48.2812 3.74238 48.3357L5.02146 48.5401C5.40518 48.6015 5.76715 48.5937 6.10737 48.5169C6.44758 48.4402 6.7475 48.3077 7.00712 48.1197C7.26674 47.9316 7.48606 47.6879 7.66509 47.3886C7.84411 47.0893 7.96429 46.7477 8.02563 46.364Z"
               fill="white"
@@ -301,8 +243,8 @@
         <div class="container container-hero">
           <div class="text-wrap">
             <div>
-              <h1 class="hero-header bg-text__first">
-                Zeev
+              <h1 class="hero-header bg-text__first">Zeev
+                <h1 class="animated">Zeev</h1>
               </h1>
               <h2 class="head-mobile">
                 <div class="el1 prop-el">Z</div>
@@ -312,23 +254,21 @@
               </h2>
               <h2 class="hero-header bg-text__hero">Studio</h2>
             </div>
-         <div class="wrap-down__section"> 
+            <div class="wrap-down__section">
               <h2 class="hero-header-two hero-1">Inspiration</h2>
               <h2 class="hero-header-two hero-2">Creative</h2>
-            </div>  
+            </div>
           </div>
         </div>
-        
       </section>
       <section class="section-video__vynil">
         <div class="container container-main">
           <div class="text-wrap__two">
             <h2 class="hero-header__two">Header</h2>
             <p class="hero-paragraph__main">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat.
             </p>
           </div>
           <div class="wrap-video">
@@ -342,21 +282,10 @@
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <g opacity="0.9">
-                  <circle
-                    cx="36.2899"
-                    cy="37.9357"
-                    r="23.2098"
-                    stroke="white"
-                  />
+                  <circle cx="36.2899" cy="37.9357" r="23.2098" stroke="white" />
                   <g clip-path="url(#clip0_351_2202)">
-                    <path
-                      d="M34.9912 32.2905H32.2815V45.839H34.9912V32.2905Z"
-                      fill="white"
-                    />
-                    <path
-                      d="M40.2993 32.2905H37.5896V45.839H40.2993V32.2905Z"
-                      fill="white"
-                    />
+                    <path d="M34.9912 32.2905H32.2815V45.839H34.9912V32.2905Z" fill="white" />
+                    <path d="M40.2993 32.2905H37.5896V45.839H40.2993V32.2905Z" fill="white" />
                   </g>
                   <path
                     d="M56.2299 70.9292L55.2318 71.4171L54.6369 70.1999C54.628 70.7371 54.4843 71.2144 54.2059 71.6321C53.9233 72.0617 53.5223 72.4035 53.003 72.6574C52.1915 73.054 51.4114 73.1035 50.6627 72.806C49.918 72.5165 49.2898 71.8484 48.7781 70.8015L48.6592 70.5581C48.3894 70.0063 48.2183 69.4917 48.1459 69.0144C48.0774 68.5452 48.0934 68.1152 48.1939 67.7242C48.2983 67.3414 48.4832 66.9997 48.7484 66.6991C49.0056 66.4025 49.333 66.157 49.7306 65.9627C50.2824 65.693 50.8044 65.5886 51.2967 65.6496C51.7809 65.7145 52.2055 65.884 52.5707 66.1579L50.8155 62.5671L51.8866 62.0435L56.2299 70.9292ZM50.4381 66.7931C50.1785 66.92 49.9588 67.0877 49.7792 67.2962C49.6035 67.5127 49.4822 67.758 49.4151 68.0321C49.3399 68.3102 49.329 68.6171 49.3825 68.9528C49.428 69.2926 49.5439 69.6531 49.7303 70.0345L49.8493 70.278C50.0199 70.6269 50.2213 70.9155 50.4535 71.1438C50.6776 71.3761 50.9205 71.5439 51.1821 71.6472C51.4396 71.7627 51.7058 71.8135 51.9806 71.7999C52.2554 71.7862 52.5226 71.7159 52.7823 71.5889C53.0745 71.4462 53.3184 71.2666 53.5143 71.0502C53.7141 70.8419 53.8576 70.611 53.9447 70.3572C54.0358 70.1117 54.0745 69.8515 54.0608 69.5766C54.0471 69.3018 53.9768 69.0346 53.8498 68.7749L53.3739 67.8011C53.2311 67.509 53.0515 67.265 52.8351 67.0692C52.6187 66.8733 52.3837 66.7319 52.13 66.6447C51.8763 66.5576 51.6039 66.5249 51.3129 66.5465C51.0218 66.5681 50.7303 66.6503 50.4381 66.7931Z"
@@ -401,12 +330,7 @@
                 </g>
                 <defs>
                   <clippath id="clip0_351_2202">
-                    <rect
-                      width="13.5485"
-                      height="13.5485"
-                      fill="white"
-                      transform="translate(29.5161 32.2905)"
-                    />
+                    <rect width="13.5485" height="13.5485" fill="white" transform="translate(29.5161 32.2905)" />
                   </clippath>
                 </defs>
               </svg>
@@ -419,10 +343,7 @@
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <circle cx="52.6076" cy="51.3725" r="31.4914" stroke="white" />
-                <path
-                  d="M59.7456 51.764L46.2527 59.8597V43.6682L59.7456 51.764Z"
-                  fill="white"
-                />
+                <path d="M59.7456 51.764L46.2527 59.8597V43.6682L59.7456 51.764Z" fill="white" />
                 <path
                   d="M0 49.1804L0.209571 47.8693L1.80842 48.1249C1.2895 47.7468 0.921703 47.2781 0.705034 46.7188C0.479411 46.1471 0.421122 45.5201 0.530167 44.8379C0.700551 43.772 1.1886 42.9755 1.99433 42.4485C2.78939 41.9197 3.87443 41.7652 5.24944 41.985L5.56921 42.0361C6.29403 42.1519 6.91461 42.3386 7.43095 42.596C7.93664 42.8518 8.34598 43.1632 8.65898 43.5302C8.96132 43.8955 9.16816 44.3112 9.2795 44.7772C9.39255 45.2325 9.40733 45.7213 9.32385 46.2436C9.20798 46.9684 8.95098 47.5504 8.55283 47.9896C8.15639 48.4182 7.69875 48.7167 7.17991 48.8852L11.8965 49.6391L11.6716 51.0461L0 49.1804ZM8.02563 46.364C8.08015 46.0229 8.06731 45.6929 7.98711 45.374C7.89625 45.0534 7.73995 44.7661 7.51821 44.512C7.29818 44.2473 7.00567 44.0256 6.64069 43.8471C6.27741 43.6578 5.84528 43.5231 5.34431 43.4431L5.02454 43.392C4.5662 43.3187 4.14561 43.317 3.76275 43.387C3.38161 43.4463 3.05056 43.5683 2.76962 43.753C2.47973 43.9253 2.24698 44.1504 2.07136 44.4284C1.89575 44.7064 1.78068 45.016 1.72616 45.3571C1.66482 45.7408 1.67255 46.1028 1.74934 46.443C1.81547 46.7815 1.94257 47.0805 2.13063 47.3402C2.30803 47.5981 2.53573 47.8148 2.81374 47.9905C3.09174 48.1661 3.40129 48.2812 3.74238 48.3357L5.02146 48.5401C5.40518 48.6015 5.76715 48.5937 6.10737 48.5169C6.44758 48.4402 6.7475 48.3077 7.00712 48.1197C7.26674 47.9316 7.48606 47.6879 7.66509 47.3886C7.84411 47.0893 7.96429 46.7477 8.02563 46.364Z"
                   fill="white"
@@ -474,20 +395,16 @@
           <div class="part-two">
             <h2 class="hero-header__two">Header</h2>
             <p class="hero-paragraph__main">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat.
             </p>
           </div>
         </div>
       </section>
       <section>
-        
         <div class="container container-team">
-          <h2 class="header-team">
-            <span class="our">Our </span><br /><span class="team">Team</span>
-          </h2>
+          <h2 class="header-team"><span class="our">Our </span><br /><span class="team">Team</span></h2>
           <div class="swiper" data-mobile="false">
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
@@ -497,9 +414,7 @@
                 <div data-target="first" class="wrap-opacity__user">
                   <div data-target="first" class="wrap-user__text">
                     <h3 data-target="first" class="header-user">Alex Chang</h3>
-                    <p data-target="first" class="text-bio__user">
-                      Commercial Ceo
-                    </p>
+                    <p data-target="first" class="text-bio__user">Commercial Ceo</p>
                   </div>
                   <a data-target="first" href="">
                     <svg
@@ -511,15 +426,7 @@
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
                     >
-                      <rect
-                        data-target="first"
-                        x="0.5"
-                        y="0.5"
-                        width="47"
-                        height="47"
-                        rx="23.5"
-                        stroke="white"
-                      />
+                      <rect data-target="first" x="0.5" y="0.5" width="47" height="47" rx="23.5" stroke="white" />
                       <path
                         data-target="first"
                         d="M37.3247 35.3251C35.7497 35.2876 34.2122 35.2876 32.6372 35.3251C32.2997 35.3251 32.2247 35.2501 32.2247 34.9126C32.2247 32.1376 32.2247 29.3251 32.2247 26.5501C32.2247 25.9126 32.1872 25.2751 31.9997 24.6751C31.4372 22.7251 29.1872 22.0126 27.5747 23.3251C26.7122 24.0001 26.3747 24.9376 26.3747 26.0626C26.3747 28.6876 26.3747 31.3126 26.3747 33.9376C26.3747 34.2751 26.3372 34.6126 26.3747 34.9876C26.4122 35.2876 26.2622 35.3626 25.9997 35.3251C24.3872 35.3251 22.8122 35.3251 21.1997 35.3251C20.8997 35.3251 20.8247 35.2501 20.8247 34.9501C20.8622 32.5876 20.8622 30.2251 20.8622 27.8251C20.8622 24.9001 20.8622 21.9751 20.8247 19.0876C20.8247 18.7501 20.8997 18.6751 21.1997 18.6751C22.8122 18.6751 24.3872 18.6751 25.9997 18.6751C26.2997 18.6751 26.3747 18.7501 26.3747 19.0501C26.3747 19.6501 26.3747 20.2501 26.3747 20.9626C26.4872 20.8501 26.5247 20.8126 26.5622 20.7751C28.0247 18.6376 30.0872 18.0376 32.5247 18.4126C35.3372 18.8626 37.1372 20.8126 37.5872 23.8126C37.6997 24.5251 37.7372 25.2376 37.7372 25.9501C37.7372 28.9501 37.7372 31.9126 37.7372 34.9126C37.7372 35.2126 37.6622 35.3251 37.3247 35.3251Z"
@@ -547,15 +454,7 @@
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
                     >
-                      <rect
-                        data-target="first"
-                        x="0.5"
-                        y="0.5"
-                        width="47"
-                        height="47"
-                        rx="23.5"
-                        stroke="white"
-                      />
+                      <rect data-target="first" x="0.5" y="0.5" width="47" height="47" rx="23.5" stroke="white" />
                       <path
                         data-target="first"
                         fill-rule="evenodd"
@@ -567,17 +466,12 @@
                   </a>
                 </div>
               </li>
-              <li
-                data-target="second"
-                class="item-user swiper-slide slide-left"
-              >
+              <li data-target="second" class="item-user swiper-slide slide-left">
                 <div data-target="second" class="wrap-user second-user"></div>
                 <div data-target="second" class="wrap-opacity__user">
                   <div data-target="second" class="wrap-user__text">
                     <h3 data-target="second" class="header-user">Alex Chang</h3>
-                    <p data-target="second" class="text-bio__user">
-                      Commercial Ceo
-                    </p>
+                    <p data-target="second" class="text-bio__user">Commercial Ceo</p>
                   </div>
                   <a data-target="second" href="">
                     <svg
@@ -589,15 +483,7 @@
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
                     >
-                      <rect
-                        data-target="second"
-                        x="0.5"
-                        y="0.5"
-                        width="47"
-                        height="47"
-                        rx="23.5"
-                        stroke="white"
-                      />
+                      <rect data-target="second" x="0.5" y="0.5" width="47" height="47" rx="23.5" stroke="white" />
                       <path
                         data-target="second"
                         d="M37.3247 35.3251C35.7497 35.2876 34.2122 35.2876 32.6372 35.3251C32.2997 35.3251 32.2247 35.2501 32.2247 34.9126C32.2247 32.1376 32.2247 29.3251 32.2247 26.5501C32.2247 25.9126 32.1872 25.2751 31.9997 24.6751C31.4372 22.7251 29.1872 22.0126 27.5747 23.3251C26.7122 24.0001 26.3747 24.9376 26.3747 26.0626C26.3747 28.6876 26.3747 31.3126 26.3747 33.9376C26.3747 34.2751 26.3372 34.6126 26.3747 34.9876C26.4122 35.2876 26.2622 35.3626 25.9997 35.3251C24.3872 35.3251 22.8122 35.3251 21.1997 35.3251C20.8997 35.3251 20.8247 35.2501 20.8247 34.9501C20.8622 32.5876 20.8622 30.2251 20.8622 27.8251C20.8622 24.9001 20.8622 21.9751 20.8247 19.0876C20.8247 18.7501 20.8997 18.6751 21.1997 18.6751C22.8122 18.6751 24.3872 18.6751 25.9997 18.6751C26.2997 18.6751 26.3747 18.7501 26.3747 19.0501C26.3747 19.6501 26.3747 20.2501 26.3747 20.9626C26.4872 20.8501 26.5247 20.8126 26.5622 20.7751C28.0247 18.6376 30.0872 18.0376 32.5247 18.4126C35.3372 18.8626 37.1372 20.8126 37.5872 23.8126C37.6997 24.5251 37.7372 25.2376 37.7372 25.9501C37.7372 28.9501 37.7372 31.9126 37.7372 34.9126C37.7372 35.2126 37.6622 35.3251 37.3247 35.3251Z"
@@ -625,15 +511,7 @@
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
                     >
-                      <rect
-                        data-target="second"
-                        x="0.5"
-                        y="0.5"
-                        width="47"
-                        height="47"
-                        rx="23.5"
-                        stroke="white"
-                      />
+                      <rect data-target="second" x="0.5" y="0.5" width="47" height="47" rx="23.5" stroke="white" />
                       <path
                         data-target="second"
                         fill-rule="evenodd"
@@ -650,9 +528,7 @@
                 <div data-target="third" class="wrap-opacity__user">
                   <div data-target="third" class="wrap-user__text">
                     <h3 data-target="third" class="header-user">Alex Chang</h3>
-                    <p data-target="third" class="text-bio__user">
-                      Commercial Ceo
-                    </p>
+                    <p data-target="third" class="text-bio__user">Commercial Ceo</p>
                   </div>
                   <a data-target="third" href="">
                     <svg
@@ -664,15 +540,7 @@
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
                     >
-                      <rect
-                        data-target="third"
-                        x="0.5"
-                        y="0.5"
-                        width="47"
-                        height="47"
-                        rx="23.5"
-                        stroke="white"
-                      />
+                      <rect data-target="third" x="0.5" y="0.5" width="47" height="47" rx="23.5" stroke="white" />
                       <path
                         data-target="third"
                         d="M37.3247 35.3251C35.7497 35.2876 34.2122 35.2876 32.6372 35.3251C32.2997 35.3251 32.2247 35.2501 32.2247 34.9126C32.2247 32.1376 32.2247 29.3251 32.2247 26.5501C32.2247 25.9126 32.1872 25.2751 31.9997 24.6751C31.4372 22.7251 29.1872 22.0126 27.5747 23.3251C26.7122 24.0001 26.3747 24.9376 26.3747 26.0626C26.3747 28.6876 26.3747 31.3126 26.3747 33.9376C26.3747 34.2751 26.3372 34.6126 26.3747 34.9876C26.4122 35.2876 26.2622 35.3626 25.9997 35.3251C24.3872 35.3251 22.8122 35.3251 21.1997 35.3251C20.8997 35.3251 20.8247 35.2501 20.8247 34.9501C20.8622 32.5876 20.8622 30.2251 20.8622 27.8251C20.8622 24.9001 20.8622 21.9751 20.8247 19.0876C20.8247 18.7501 20.8997 18.6751 21.1997 18.6751C22.8122 18.6751 24.3872 18.6751 25.9997 18.6751C26.2997 18.6751 26.3747 18.7501 26.3747 19.0501C26.3747 19.6501 26.3747 20.2501 26.3747 20.9626C26.4872 20.8501 26.5247 20.8126 26.5622 20.7751C28.0247 18.6376 30.0872 18.0376 32.5247 18.4126C35.3372 18.8626 37.1372 20.8126 37.5872 23.8126C37.6997 24.5251 37.7372 25.2376 37.7372 25.9501C37.7372 28.9501 37.7372 31.9126 37.7372 34.9126C37.7372 35.2126 37.6622 35.3251 37.3247 35.3251Z"
@@ -700,15 +568,7 @@
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
                     >
-                      <rect
-                        data-target="third"
-                        x="0.5"
-                        y="0.5"
-                        width="47"
-                        height="47"
-                        rx="23.5"
-                        stroke="white"
-                      />
+                      <rect data-target="third" x="0.5" y="0.5" width="47" height="47" rx="23.5" stroke="white" />
                       <path
                         data-target="third"
                         fill-rule="evenodd"
@@ -720,17 +580,12 @@
                   </a>
                 </div>
               </li>
-              <li
-                data-target="fourth"
-                class="item-user swiper-slide slide-right"
-              >
+              <li data-target="fourth" class="item-user swiper-slide slide-right">
                 <div data-target="fourth" class="wrap-user fourth-user"></div>
                 <div data-target="fourth" class="wrap-opacity__user">
                   <div data-target="fourth" class="wrap-user__text">
                     <h3 data-target="fourth" class="header-user">Alex Chang</h3>
-                    <p data-target="fourth" class="text-bio__user">
-                      Commercial Ceo
-                    </p>
+                    <p data-target="fourth" class="text-bio__user">Commercial Ceo</p>
                   </div>
                   <a data-target="fourth" href="">
                     <svg
@@ -742,15 +597,7 @@
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
                     >
-                      <rect
-                        data-target="fourth"
-                        x="0.5"
-                        y="0.5"
-                        width="47"
-                        height="47"
-                        rx="23.5"
-                        stroke="white"
-                      />
+                      <rect data-target="fourth" x="0.5" y="0.5" width="47" height="47" rx="23.5" stroke="white" />
                       <path
                         data-target="fourth"
                         d="M37.3247 35.3251C35.7497 35.2876 34.2122 35.2876 32.6372 35.3251C32.2997 35.3251 32.2247 35.2501 32.2247 34.9126C32.2247 32.1376 32.2247 29.3251 32.2247 26.5501C32.2247 25.9126 32.1872 25.2751 31.9997 24.6751C31.4372 22.7251 29.1872 22.0126 27.5747 23.3251C26.7122 24.0001 26.3747 24.9376 26.3747 26.0626C26.3747 28.6876 26.3747 31.3126 26.3747 33.9376C26.3747 34.2751 26.3372 34.6126 26.3747 34.9876C26.4122 35.2876 26.2622 35.3626 25.9997 35.3251C24.3872 35.3251 22.8122 35.3251 21.1997 35.3251C20.8997 35.3251 20.8247 35.2501 20.8247 34.9501C20.8622 32.5876 20.8622 30.2251 20.8622 27.8251C20.8622 24.9001 20.8622 21.9751 20.8247 19.0876C20.8247 18.7501 20.8997 18.6751 21.1997 18.6751C22.8122 18.6751 24.3872 18.6751 25.9997 18.6751C26.2997 18.6751 26.3747 18.7501 26.3747 19.0501C26.3747 19.6501 26.3747 20.2501 26.3747 20.9626C26.4872 20.8501 26.5247 20.8126 26.5622 20.7751C28.0247 18.6376 30.0872 18.0376 32.5247 18.4126C35.3372 18.8626 37.1372 20.8126 37.5872 23.8126C37.6997 24.5251 37.7372 25.2376 37.7372 25.9501C37.7372 28.9501 37.7372 31.9126 37.7372 34.9126C37.7372 35.2126 37.6622 35.3251 37.3247 35.3251Z"
@@ -778,15 +625,7 @@
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
                     >
-                      <rect
-                        data-target="fourth"
-                        x="0.5"
-                        y="0.5"
-                        width="47"
-                        height="47"
-                        rx="23.5"
-                        stroke="white"
-                      />
+                      <rect data-target="fourth" x="0.5" y="0.5" width="47" height="47" rx="23.5" stroke="white" />
                       <path
                         data-target="fourth"
                         fill-rule="evenodd"
@@ -798,17 +637,12 @@
                   </a>
                 </div>
               </li>
-              <li
-                data-target="fifth"
-                class="item-user swiper-slide slide-right"
-              >
+              <li data-target="fifth" class="item-user swiper-slide slide-right">
                 <div data-target="fifth" class="wrap-user fifth-user"></div>
                 <div data-target="fifth" class="wrap-opacity__user">
                   <div data-target="fifth" class="wrap-user__text">
                     <h3 data-target="fifth" class="header-user">Alex Chang</h3>
-                    <p data-target="fifth" class="text-bio__user">
-                      Commercial Ceo
-                    </p>
+                    <p data-target="fifth" class="text-bio__user">Commercial Ceo</p>
                   </div>
                   <a data-target="fifth" href="">
                     <svg
@@ -820,15 +654,7 @@
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
                     >
-                      <rect
-                        data-target="fifth"
-                        x="0.5"
-                        y="0.5"
-                        width="47"
-                        height="47"
-                        rx="23.5"
-                        stroke="white"
-                      />
+                      <rect data-target="fifth" x="0.5" y="0.5" width="47" height="47" rx="23.5" stroke="white" />
                       <path
                         data-target="fifth"
                         d="M37.3247 35.3251C35.7497 35.2876 34.2122 35.2876 32.6372 35.3251C32.2997 35.3251 32.2247 35.2501 32.2247 34.9126C32.2247 32.1376 32.2247 29.3251 32.2247 26.5501C32.2247 25.9126 32.1872 25.2751 31.9997 24.6751C31.4372 22.7251 29.1872 22.0126 27.5747 23.3251C26.7122 24.0001 26.3747 24.9376 26.3747 26.0626C26.3747 28.6876 26.3747 31.3126 26.3747 33.9376C26.3747 34.2751 26.3372 34.6126 26.3747 34.9876C26.4122 35.2876 26.2622 35.3626 25.9997 35.3251C24.3872 35.3251 22.8122 35.3251 21.1997 35.3251C20.8997 35.3251 20.8247 35.2501 20.8247 34.9501C20.8622 32.5876 20.8622 30.2251 20.8622 27.8251C20.8622 24.9001 20.8622 21.9751 20.8247 19.0876C20.8247 18.7501 20.8997 18.6751 21.1997 18.6751C22.8122 18.6751 24.3872 18.6751 25.9997 18.6751C26.2997 18.6751 26.3747 18.7501 26.3747 19.0501C26.3747 19.6501 26.3747 20.2501 26.3747 20.9626C26.4872 20.8501 26.5247 20.8126 26.5622 20.7751C28.0247 18.6376 30.0872 18.0376 32.5247 18.4126C35.3372 18.8626 37.1372 20.8126 37.5872 23.8126C37.6997 24.5251 37.7372 25.2376 37.7372 25.9501C37.7372 28.9501 37.7372 31.9126 37.7372 34.9126C37.7372 35.2126 37.6622 35.3251 37.3247 35.3251Z"
@@ -856,15 +682,7 @@
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
                     >
-                      <rect
-                        data-target="fifth"
-                        x="0.5"
-                        y="0.5"
-                        width="47"
-                        height="47"
-                        rx="23.5"
-                        stroke="white"
-                      />
+                      <rect data-target="fifth" x="0.5" y="0.5" width="47" height="47" rx="23.5" stroke="white" />
                       <path
                         data-target="fifth"
                         fill-rule="evenodd"
@@ -876,17 +694,12 @@
                   </a>
                 </div>
               </li>
-              <li
-                data-target="sixth"
-                class="item-user swiper-slide slide-right"
-              >
+              <li data-target="sixth" class="item-user swiper-slide slide-right">
                 <div data-target="sixth" class="wrap-user sixth-user"></div>
                 <div data-target="sixth" class="wrap-opacity__user">
                   <div data-target="sixth" class="wrap-user__text">
                     <h3 data-target="sixth" class="header-user">Alex Chang</h3>
-                    <p data-target="sixth" class="text-bio__user">
-                      Commercial Ceo
-                    </p>
+                    <p data-target="sixth" class="text-bio__user">Commercial Ceo</p>
                   </div>
                   <a data-target="sixth" href="">
                     <svg
@@ -898,15 +711,7 @@
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
                     >
-                      <rect
-                        data-target="sixth"
-                        x="0.5"
-                        y="0.5"
-                        width="47"
-                        height="47"
-                        rx="23.5"
-                        stroke="white"
-                      />
+                      <rect data-target="sixth" x="0.5" y="0.5" width="47" height="47" rx="23.5" stroke="white" />
                       <path
                         data-target="sixth"
                         d="M37.3247 35.3251C35.7497 35.2876 34.2122 35.2876 32.6372 35.3251C32.2997 35.3251 32.2247 35.2501 32.2247 34.9126C32.2247 32.1376 32.2247 29.3251 32.2247 26.5501C32.2247 25.9126 32.1872 25.2751 31.9997 24.6751C31.4372 22.7251 29.1872 22.0126 27.5747 23.3251C26.7122 24.0001 26.3747 24.9376 26.3747 26.0626C26.3747 28.6876 26.3747 31.3126 26.3747 33.9376C26.3747 34.2751 26.3372 34.6126 26.3747 34.9876C26.4122 35.2876 26.2622 35.3626 25.9997 35.3251C24.3872 35.3251 22.8122 35.3251 21.1997 35.3251C20.8997 35.3251 20.8247 35.2501 20.8247 34.9501C20.8622 32.5876 20.8622 30.2251 20.8622 27.8251C20.8622 24.9001 20.8622 21.9751 20.8247 19.0876C20.8247 18.7501 20.8997 18.6751 21.1997 18.6751C22.8122 18.6751 24.3872 18.6751 25.9997 18.6751C26.2997 18.6751 26.3747 18.7501 26.3747 19.0501C26.3747 19.6501 26.3747 20.2501 26.3747 20.9626C26.4872 20.8501 26.5247 20.8126 26.5622 20.7751C28.0247 18.6376 30.0872 18.0376 32.5247 18.4126C35.3372 18.8626 37.1372 20.8126 37.5872 23.8126C37.6997 24.5251 37.7372 25.2376 37.7372 25.9501C37.7372 28.9501 37.7372 31.9126 37.7372 34.9126C37.7372 35.2126 37.6622 35.3251 37.3247 35.3251Z"
@@ -934,15 +739,7 @@
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
                     >
-                      <rect
-                        data-target="sixth"
-                        x="0.5"
-                        y="0.5"
-                        width="47"
-                        height="47"
-                        rx="23.5"
-                        stroke="white"
-                      />
+                      <rect data-target="sixth" x="0.5" y="0.5" width="47" height="47" rx="23.5" stroke="white" />
                       <path
                         data-target="sixth"
                         fill-rule="evenodd"
@@ -963,52 +760,30 @@
         <div class="container container-portfolio">
           <div class="wrap-text__contacts">
             <p class="collection-text settings-text">A collection <span class="mobile-of">of</span></p>
-            <h2 class="head-portfolio settings-header"><span class="desktop-off">Of</span> portf<span class="mobile-word">olios</span></h2>
+            <h2 class="head-portfolio settings-header">
+              <span class="desktop-off">Of</span> portf<span class="mobile-word">olios</span>
+            </h2>
           </div>
           <ul class="list-portfolio first-section">
             <li class="portfolio-item">
-              <img
-                class="img-portfolio"
-                src="./img/port1.webp"
-                alt="Portfolio work"
-              />
+              <img class="img-portfolio" src="./img/port1.webp" alt="Portfolio work" />
             </li>
             <li class="portfolio-item">
-              <img
-                class="img-portfolio"
-                src="./img/port1.webp"
-                alt="Portfolio work"
-              />
+              <img class="img-portfolio" src="./img/port1.webp" alt="Portfolio work" />
             </li>
             <li class="portfolio-item">
-              <img
-                class="img-portfolio"
-                src="./img/port1.webp"
-                alt="Portfolio work"
-              />
+              <img class="img-portfolio" src="./img/port1.webp" alt="Portfolio work" />
             </li>
-          </ul> 
+          </ul>
           <ul class="list-portfolio second-section">
             <li class="portfolio-item">
-              <img
-                class="img-portfolio"
-                src="./img/port3.webp"
-                alt="Portfolio work"
-              />
+              <img class="img-portfolio" src="./img/port3.webp" alt="Portfolio work" />
             </li>
             <li class="portfolio-item">
-              <img
-                class="img-portfolio"
-                src="./img/port2.webp"
-                alt="Portfolio work"
-              />
+              <img class="img-portfolio" src="./img/port2.webp" alt="Portfolio work" />
             </li>
             <li class="portfolio-item">
-              <img
-                class="img-portfolio"
-                src="./img/port3.webp"
-                alt="Portfolio work"
-              />
+              <img class="img-portfolio" src="./img/port3.webp" alt="Portfolio work" />
             </li>
           </ul>
         </div>
@@ -1019,18 +794,8 @@
             <p class="our-text settings-text">Our</p>
             <div class="wrap-contact">
               <h2 class="our-contacts__header settings-header">Cont<span class="mobile-word">acts</span></h2>
-              <a
-                class="link-contact phone"
-                target="_blank"
-                href="tel:6031112298"
-              >
-                <svg
-                  width="18"
-                  height="18"
-                  viewbox="0 0 18 18"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
+              <a class="link-contact phone" target="_blank" href="tel:6031112298">
+                <svg width="18" height="18" viewbox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M13.215 8.06245C12.8925 8.06245 12.6375 7.79995 12.6375 7.48495C12.6375 7.20745 12.36 6.62995 11.895 6.12745C11.4375 5.63995 10.935 5.35495 10.515 5.35495C10.1925 5.35495 9.9375 5.09245 9.9375 4.77745C9.9375 4.46245 10.2 4.19995 10.515 4.19995C11.265 4.19995 12.0525 4.60495 12.7425 5.33245C13.3875 6.01495 13.8 6.86245 13.8 7.47745C13.8 7.79995 13.5375 8.06245 13.215 8.06245Z"
                     fill="white"
@@ -1050,18 +815,8 @@
                 </svg>
                 +972552876840
               </a>
-              <a
-                class="link-contact mail"
-                target="_blank"
-                href="mailto:webmaster@example.com"
-              >
-                <svg
-                  width="18"
-                  height="18"
-                  viewbox="0 0 18 18"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
+              <a class="link-contact mail" target="_blank" href="mailto:webmaster@example.com">
+                <svg width="18" height="18" viewbox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M12.75 2.625H5.25C3 2.625 1.5 3.75 1.5 6.375V11.625C1.5 14.25 3 15.375 5.25 15.375H12.75C15 15.375 16.5 14.25 16.5 11.625V6.375C16.5 3.75 15 2.625 12.75 2.625ZM13.1025 7.1925L10.755 9.0675C10.26 9.465 9.63 9.66 9 9.66C8.37 9.66 7.7325 9.465 7.245 9.0675L4.8975 7.1925C4.6575 6.9975 4.62 6.6375 4.8075 6.3975C5.0025 6.1575 5.355 6.1125 5.595 6.3075L7.9425 8.1825C8.5125 8.64 9.48 8.64 10.05 8.1825L12.3975 6.3075C12.6375 6.1125 12.9975 6.15 13.185 6.3975C13.38 6.6375 13.3425 6.9975 13.1025 7.1925Z"
                     fill="white"
@@ -1126,12 +881,8 @@
             <a class="set-item__link" href="">English (UK)</a>
           </li>
         </ul>
-        <address class="footer-text__style addres">
-          Made in nipaluna (Hobart), Australia.
-        </address>
-        <p class="footer-text__style text-copyright">
-          Copyright 2022 Savage. All rights reserved.
-        </p>
+        <address class="footer-text__style addres">Made in nipaluna (Hobart), Australia.</address>
+        <p class="footer-text__style text-copyright">Copyright 2022 Savage. All rights reserved.</p>
       </div>
     </footer>
   </body>

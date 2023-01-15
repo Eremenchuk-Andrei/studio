@@ -481,6 +481,9 @@ container.onmouseout = function (e) {
 
 }
 
-
-
+// const element = document.querySelector(".animated");
+// setTimeout(() => {
+//  // element.classList.add("animated");
+//   element.classList.add("animated-two");
+// }, 5000);
 
